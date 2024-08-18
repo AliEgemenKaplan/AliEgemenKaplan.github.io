@@ -6,7 +6,291 @@
     <title>Document</title>
     <!--Fontawsome için-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+html {
+    font-family: "Open Sans", sans-serif;
+    
+}
+/* Navbar */ 
+#navbar{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem;
+    height: 70px;
+}
+#navbar ul {
+    list-style-type: none; 
+    display: flex;
+    align-items: center;
+}
 
+#navbar ul li a {
+    padding: 0.75rem;
+ 
+}
+
+#navbar ul li a:hover {
+    background:  #336ea6;
+    border-radius: 4px;
+ 
+}
+/* Home Section */ 
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px grey solid;
+}
+#home img{
+    max-width: 40%;
+    height: 40%;
+    border-radius: 100%;
+}
+#home .name h2{
+    margin-bottom: 0.75rem;
+}
+#home .name p{
+    opacity: 0.7;
+    font-style: italic;
+}
+#Sosyal-Medya a:hover{
+    color: black;
+    background: white;
+    margin: 1.5px;
+    padding: 1px;
+}
+/* Teknik Bilgi Başlık */
+.head{
+    background:  rgba(0, 0, 0, 0.5);
+    height: 20%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.head h1{
+    color: white;
+    margin: 0;
+
+}
+#teknik-tablo{
+    border: 5px greenyellow;
+    border-collapse: collapse;
+    width: 60%;
+    margin: 3% auto;
+    background: rgba(38, 39, 39, 0.5);
+    
+}
+#teknik-tablo td{
+    border: 3px orange solid;
+    font-weight: 1000;
+    text-align: center;
+    color: greenyellow;
+    padding: 10px;
+}
+#teknik-tablo th{
+    border: 3px orange solid;
+    text-align: center;
+    font-weight: 2000;
+    font-size: x-large;
+    padding: 3px;
+}
+#Ana-Sayfa{
+    background: rgba(15, 15, 15, 0.5);
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2%;
+    width: 11%;
+    height: 10%;
+    border: 2px black solid;
+    border-radius: 10px;
+}
+#Ana-Sayfa a:hover{
+    color: black;
+    background: white;
+     
+ }
+#Ana-Sayfa:hover{
+    background: white;
+   
+}
+.üst{
+   background: #392cb1;
+   border: 5px black solid ;
+   border-radius: 30%;
+   width: 20%;
+   padding: 5px;
+   font-weight: 1000;
+   font-size: x-large;
+   display: flex;
+   justify-content: center;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 5%;
+  
+
+
+}
+.alt{
+    background: #578355;
+    border: 5px black solid ;
+    border-radius: 30%;
+    width: 30%;
+    padding: 5px;
+    font-weight: 1000;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 15%;
+ 
+ 
+ }
+ .İlgi-Alan-Tablo table {
+    background-color: rgba(163, 189, 72, 0.5); 
+    border: 3px black solid;
+    border-collapse: collapse; 
+    width: 40%; 
+    text-align: center; 
+    margin: 5% auto;
+    margin-bottom: 10%;
+}
+
+.İlgi-Alan-Tablo th, .İlgi-Alan-Tablo td {
+    border: 3px black solid; 
+    padding: 10px; 
+    color: black;
+    font-size: larger;
+    font-weight: 900;
+}
+.head-egitim{
+    background:  rgba(0, 0, 0, 0.5);
+    height: 20%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 10%;
+    border-radius: 5px;
+}
+#Ana-Sayfa-Egitim{
+    background: rgba(15, 15, 15, 0.5);
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    width: 11%;
+    height: 10%;
+    border: 2px black solid;
+    border-radius: 10px;
+}
+#Ana-Sayfa-Egitim a:hover{
+    color: black;
+    background: white;
+     
+ }
+#Ana-Sayfa-Egitim:hover{
+    background: white;
+   
+}
+.head-kurs{
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 15%;
+    text-align: center;
+    border: 5px black solid;
+    border-radius: 50%;
+    width: 60%;
+
+}
+.kurs {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background: rgba(69, 145, 175, 0.5);
+    border: 5px black solid;
+    border-radius: 20%;
+    width: 60%;
+    margin-bottom: 40%;
+    margin-top: 40%;
+
+}
+.kurs p{
+    font-size: xx-large;
+    
+}
+/* Text */
+.text-center{
+    text-align: center;
+}
+.heading-small{
+    font-size: 1.25rem;
+}
+.heading-medium{
+    font-size: 1.5rem;
+}
+.heading-big{
+    font-size: 2rem;
+}
+/* Colors */
+.bg-dark-blue{
+    background: #062e51;
+}
+.bg-light-blue{
+    background: #336ea6;
+}
+/* Buttons */
+.btn{
+    margin-top: 1.25rem;
+    padding: 0.8rem 3rem;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+}
+.btn-primary{
+    background: #336ea6;
+}
+.btn-primary:hover{
+    color: #336ea6;
+    background: #fff;
+    border: 0.5px #336ea6 solid;
+}
+.btn-dark{
+    background: #333;
+}
+.btn-dark:hover{
+    color: #333;
+    background: #fff;
+    border: 0.5px #333 solid;
+}
+
+/* Container */
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+    </style>
     <!--Fonts için-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
     <link rel="stylesheet" href="CSS/global.css">
