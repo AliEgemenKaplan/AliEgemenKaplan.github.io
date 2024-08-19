@@ -9,8 +9,16 @@
     padding: 0.3rem;
  
 }
+.tablo{
+    margin-top: -90px;
+}
+
+
 .tablo table{
-    width: 5%;
+   width: 80%;
+
+   
+   
 }
 .logos {
     width: 200px; /* Logoların genişliği tablo genişliği ile eşit */
@@ -18,6 +26,7 @@
     flex-direction: row; /* Logoları yatayda sıralar */
     justify-content: space-between; /* Aralarına boşluk koyar */
     margin-top: 10px; /* Tablo ile logolar arasına boşluk */
+    margin-bottom: 20px;
 }
 #egitim_arka_plan {
     background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam arka plan */
@@ -28,10 +37,14 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    
 }
 
 #egitim_arka_plan h1 {
     color: #fff; /* Yazı rengi */
     text-align: center; /* Yazıyı merkezler */
     font-size:large;
+
+    
 }
+
