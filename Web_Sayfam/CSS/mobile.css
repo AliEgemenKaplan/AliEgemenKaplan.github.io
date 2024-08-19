@@ -9,3 +9,29 @@
     padding: 0.3rem;
  
 }
+.tablo table{
+    width: 5%;
+}
+.logos {
+    width: 200px; /* Logoların genişliği tablo genişliği ile eşit */
+    display: flex;
+    flex-direction: row; /* Logoları yatayda sıralar */
+    justify-content: space-between; /* Aralarına boşluk koyar */
+    margin-top: 10px; /* Tablo ile logolar arasına boşluk */
+}
+#egitim_arka_plan {
+    background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam arka plan */
+    padding: 10px; /* İç boşluk */
+    border-radius: 4px; /* Köşe yuvarlama */
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#egitim_arka_plan h1 {
+    color: #fff; /* Yazı rengi */
+    text-align: center; /* Yazıyı merkezler */
+    font-size:large;
+}
