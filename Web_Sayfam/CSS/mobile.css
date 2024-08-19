@@ -47,4 +47,51 @@
 
     
 }
+.üst{
+    background: #392cb1;
+    border: 5px black solid ;
+    border-radius: 30%;
+    width: 80%;
+    padding: 5px;
+    font-weight: 1000;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+   
+ 
+ 
+ }
+ .alt{
+     background: #578355;
+     border: 5px black solid ;
+     border-radius: 30%;
+     width: 80%;
+     padding: 5px;
+     font-weight: 1000;
+     font-size: large;
+     display: flex;
+     justify-content: center;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 5%;
+     margin-bottom: 15%;
+  
+  
+  }
+  .head h1{
+    font-size: large;
+  }
+.head{
+    width: 40%;
+}
+#Ana-Sayfa{
+    width: 30%;
+    margin-bottom: 20px;
+}
+#Ana-Sayfa a{
+    font-size: small;
+}
 
