@@ -94,4 +94,9 @@
 #Ana-Sayfa a{
     font-size: small;
 }
+ body{
+        background: url(/Web_Sayfam/Images/pexels-minan1398-1006122.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
 
