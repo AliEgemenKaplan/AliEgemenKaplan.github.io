@@ -59,7 +59,8 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
+    margin-top: 25%;
+    
    
  
  
@@ -76,27 +77,24 @@
      justify-content: center;
      margin-left: auto;
      margin-right: auto;
-     margin-top: 5%;
+     margin-top: 20%;
      margin-bottom: 15%;
+
   
   
   }
   .head h1{
-    font-size: large;
+    font-size: x-large;
   }
 .head{
-    width: 40%;
+    width: 50%;
+    margin-bottom: 20%;
 }
 #Ana-Sayfa{
-    width: 30%;
+    width: 40%;
+    
     margin-bottom: 20px;
 }
 #Ana-Sayfa a{
     font-size: small;
 }
- body{
-        background: url(/Web_Sayfam/Images/pexels-minan1398-1006122.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-       }
-
