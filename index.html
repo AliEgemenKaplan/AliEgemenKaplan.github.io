@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim Sayfası</title>
+    <style>
+        body {
+            background: url(/Web_Sayfam/Images/pexels-nathy-1398049.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0; /* Tarayıcı varsayılan marginini sıfırlar */
+            height: 100vh; /* Tam ekran yüksekliği */
+            display: flex;
+            flex-direction: column; /* Yönü dikey yapar */
+            align-items: center; /* Yatayda ortalar */
+            justify-content: center; /* Dikeyde ortalar */
+            text-align: center;
+        }
+
+        #egitim_arka_plan {
+            background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam arka plan */
+            padding: 20px; /* İç boşluk */
+            border-radius: 5px; /* Köşe yuvarlama */
+            width: fit-content;
+            margin-bottom: 20px; /* Başlık ile tablo arasına boşluk */
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #egitim_arka_plan h1 {
+            color: #fff; /* Yazı rengi */
+            margin: 0; /* Varsayılan margini kaldırır */
+            text-align: center; /* Yazıyı merkezler */
+        }
+
+        .tablo {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Tabloyu ortalar */
+        }
+
+        table {
+            width: 500px; /* Tablo genişliğini ayarlar */
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        thead th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #f9f9f9; /* Tek sıra arka plan rengi */
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #e0e0e0; /* Çift sıra arka plan rengi */
+        }
+
+        .logos {
+            width: 400px; /* Logoların genişliği tablo genişliği ile eşit */
+            display: flex;
+            flex-direction: row; /* Logoları yatayda sıralar */
+            justify-content: space-between; /* Aralarına boşluk koyar */
+            margin-top: 10px; /* Tablo ile logolar arasına boşluk */
+        }
+
+        .logos img {
+            width: 30%; /* Resimler tablo genişliğine uyacak şekilde genişletilir */
+            height: 60%; /* Yükseklik oranını korur */
+        }
+        #Ana-Sayfaya-Dön{
+            background: rgba(0, 0, 0, 0.5);
+            padding: 8px;
+            border-radius: 5px;
+        }
+        #Ana-Sayfaya-Dön a{
+            color: white;
+            text-decoration: none;
+        }
+        #Ana-Sayfaya-Dön:hover {
+            background: white;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        #Ana-Sayfaya-Dön:hover a{
+            color:  rgba(0, 0, 0, 0.5);
+        }
+        
+    </style>
+    <!-- Fontawesome için -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Fonts için -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="/Web_Sayfam/CSS/main.css">
+    <link rel="stylesheet" href="/Web_Sayfam/CSS/global.css">
+    <!-- Tablet için -->
+    <link rel="stylesheet" media="(max-width: 768px)" href="/Web_Sayfam/CSS/tablet.css">
+    <!-- Telefon için -->
+    <link rel="stylesheet" media="(max-width: 500px)" href="/Web_Sayfam/CSS/mobile.css">
+</head>
+<body>
+
+    <div id="Ana-Sayfaya-Dön">
+        <a href="/Web_Sayfam/index1.html">Ana Sayfaya Gir</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim Sayfası</title>
+    <style>
+        body {
+            background: url(/Web_Sayfam/Images/pexels-nathy-1398049.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0; /* Tarayıcı varsayılan marginini sıfırlar */
+            height: 100vh; /* Tam ekran yüksekliği */
+            display: flex;
+            flex-direction: column; /* Yönü dikey yapar */
+            align-items: center; /* Yatayda ortalar */
+            justify-content: center; /* Dikeyde ortalar */
+            text-align: center;
+        }
+
+        #egitim_arka_plan {
+            background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam arka plan */
+            padding: 20px; /* İç boşluk */
+            border-radius: 5px; /* Köşe yuvarlama */
+            width: fit-content;
+            margin-bottom: 20px; /* Başlık ile tablo arasına boşluk */
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #egitim_arka_plan h1 {
+            color: #fff; /* Yazı rengi */
+            margin: 0; /* Varsayılan margini kaldırır */
+            text-align: center; /* Yazıyı merkezler */
+        }
+
+        .tablo {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Tabloyu ortalar */
+        }
+
+        table {
+            width: 500px; /* Tablo genişliğini ayarlar */
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        thead th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #f9f9f9; /* Tek sıra arka plan rengi */
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #e0e0e0; /* Çift sıra arka plan rengi */
+        }
+
+        .logos {
+            width: 400px; /* Logoların genişliği tablo genişliği ile eşit */
+            display: flex;
+            flex-direction: row; /* Logoları yatayda sıralar */
+            justify-content: space-between; /* Aralarına boşluk koyar */
+            margin-top: 10px; /* Tablo ile logolar arasına boşluk */
+        }
+
+        .logos img {
+            width: 30%; /* Resimler tablo genişliğine uyacak şekilde genişletilir */
+            height: 60%; /* Yükseklik oranını korur */
+        }
+        #Ana-Sayfaya-Dön{
+            background: rgba(0, 0, 0, 0.5);
+            padding: 8px;
+            border-radius: 5px;
+        }
+        #Ana-Sayfaya-Dön a{
+            color: white;
+            text-decoration: none;
+        }
+        #Ana-Sayfaya-Dön:hover {
+            background: white;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        #Ana-Sayfaya-Dön:hover a{
+            color:  rgba(0, 0, 0, 0.5);
+        }
+        
+    </style>
+    <!-- Fontawesome için -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Fonts için -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="/Web_Sayfam/CSS/main.css">
+    <link rel="stylesheet" href="/Web_Sayfam/CSS/global.css">
+    <!-- Tablet için -->
+    <link rel="stylesheet" media="(max-width: 768px)" href="/Web_Sayfam/CSS/tablet.css">
+    <!-- Telefon için -->
+    <link rel="stylesheet" media="(max-width: 500px)" href="/Web_Sayfam/CSS/mobile.css">
+</head>
+<body>
+    <section id="egitim_arka_plan">
+        <h1>Eğitim Sayfası</h1>
+    </section>
+    <div class="tablo">
+        <table>
+            <thead>
+                <tr>
+                    <th>Lise</th>
+                    <th>Üniversite</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>İTK Bahattin Tatış Kampüsü Fen Lisesi</td>
+                    <td>Gazi Üniversitesi Bilgisayar Mühendisliği 4.Sınıf <br>(İngilizce Lisans Programı)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="logos">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhIQERAQFhIQEBcVFxgVFRUVFhYVFhcXFxYXFRUZICggGRolHRUVITEhJSkrLi4vFx8zODMuNyguLisBCgoKDg0OGhAQGi0mICUvKystLystLi0vLysuLy0tLSstLS0tLS0tKy0tLSstLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAMoAlgMBEQACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAABQYHAQIEAwj/xABIEAABAgMDBQwGCgAEBwAAAAABAAIDBBEFBiESMTJBsQcTIjRRYXFygZGywVJzdJKh0RQWIyQzQlNUYoIVF5PSJUNjZIPh8f/EABsBAAEFAQEAAAAAAAAAAAAAAAACAwQFBgEH/8QAOhEAAgIAAwQGBwcEAwEAAAAAAAECAwQRMQUSIUEyMzRRcXITFVKBkaHBBhQiU2Gx0RYj4fBCQ2Il/9oADAMBAAIRAxEAPwC8UACABAAgAQAIAEAYJQBxzE+Bg3E8ur/2mJ3pcIilE4WzLgcqpqo6sknnmKyGMvOtdgcD8O9SYXKWolxOpPCQQAIAEACABAAgAQAIAEACABAAgDSJGa3OQElyS1Z3I5Itoj8or0pmV65HVE4Y0dzs57NSYlNy1FJZHmTr1BJOiaHeiUMXeRFFa0yvyF3JlcqUq5OO8lw0952UXBpS4NrNZ813jlIOHvBmnNzHDkKcjZKJxo7YVoNOeo+IT8b4vUTunUx4OYg9CeTT0Emy6AIAEACABAHBPzrmOAAFC2uPSmbLHF8BSWZ4i1Hei34pv7w+47um3+JO9FvxR94fcG6aOn38w7El3yDdR5PmHnO4pDnJ8zuSPJIOggBFbN7JWXqC/LePyMxPacwQ8lqSsNgr8S/7ceHfoviV5b97Ziaq2u9wvQac/WOtIc+40uD2NVTlKz8Uvkvdz94slBwf7HyWh2Ik6Zp9/wBDI/bVtYypr2PqSOxL0x5ejSd8hD8rjiB/F2pLxOyYy/FVwfdyKLD7Ua4W8f1WvvJzZV5JaYoGvyX+g/A9moqktosqeU1kXFdsLVnB5jdMjgAroHsyaePzHtx2paskuZzJHqLQf/HuSlfI5uo2/wASd6I+KV94fcG6BtJ3oj4o+8PuDdOuTjF7STTPTDsT1U3JZsS1kcFsaber5lMX9JCoiyem2QYb40SuRDFTTE0TA5CEpyUYrNvQSNvzI/qOH9SjNd5KezsWv+qXwNjfiR/Vd7pRmu8Fs/Fv/ql8Dlj7oUoNFsV39abVzeXePQ2PjJf8MvFpCed3R3nCDAaOd5r8Aub6JtX2fsfWTS8OJG7SvJNR8IkZ2T6LeCPgkubLWjZGFq47u8//AF/GgpSSz5ZAgDtk9H+x8lpdh9VPx+h5x9tu11eT6nsroxhqQuSipLJrNCoycXnF5MZyF4pqDgyKS0fldwh8VXW7Lonxjw8Cwq2ndHhLKXjqP5XdBcMIsAHnYafAqvnsexdCSfyJ0Nq1PpJr5jODfyVOk2K3+tdijS2diY/8fgSI47Dv/ke4vtJfqO9wpv7liPYYv71R7aNX35kgK5bz0MKPuV+Wbgzv3qlvJSRIYMUPa17czmgjoOZRh8b2XoHrHYFKo6IiWpy2vpjq+ZTd/SR2JGr48RmfV+YUd6MmYHtVfmRTQTRvTKABAAgAQAIAEAdsno/2PktLsPqp+P0POPtt2uryfU9ldGMAoOmpCANCuHTQrh00KSdNHJu3q5eDHqesj4ovCyvwIPqmbAsealj6y9A9Y7ApVHRES1Oa1tIdXzKbv6SOxI1fHiMz6vzCjvRkzA9qr8yKZCaN6ZQAFAEokbkxIsOHFEeEBEYHAFrqiuopSg2syku25XVZKtwfB5ao9/qBF/cQvdeu7jG/6gq/LfxQfUGL+4he69Ho2H9QVflv4ox9QYv7iF7r0ejYf1BV+W/ij3gXKiNFN/hHGui5Wuz8bHCwlGSzzefAy+3v/p3Qsh+HdWXHjzz5G/1PifrQ/dcrD1zX7D+KKP1RP218GY+qET9aH7rkeua/YfxRz1TP218Gam6ET9aH7rlz1xX7D+KO+qZ+2vgzgtewHQIe+uiMcMpraAGtXGgzp6jaULrFBRazGrtnSqg57yeQkKsCvNSuCjRyat6uXgx2nrI+KLvsr8CD6pmwLHmqY+svQPWOwKVR0REtTmtbTHV8ym7+kjsSNXy4jM+r8wo70ZMwPaq/MimQmjemUAYKARcN3m/dZb1DNieh0UYLHdps8zO/JSiKGSgDGSgDUtQBgtQBoWoA1LV04R++o+6/+aF4lM2f2iJFxvZ5EFK1BmTQrgpGjk1b1cvBjtPWR8UXfZX4EH1TNgWPNUx9ZegesdgUqjoiJanNa2mOr5lN39JHYkavlxGZ9X5hR3oyZge1V+ZFMhNG9MoAwUASuRv1FhQ4cJsvBIhMDAS94JoM5ACWpZLIz+I2G7bZWKerz0Pf/MON+1ge/E+S7voa/p+X5i+Af5hxv2sD34nyRvoP6fl+YvgSe6dtPnIcSI+GxhZEDAGkkHg1qapSlmVePwTwk1ByzzWY6LV0gie8tqOloTYjGNcXRQyjiQACCa4dCk4TD+ns3M8hjE3+hr38syOfXOP+3l/fifJWfqb/AN/IrvW69j5mpvlG/Qge/E+SPU3/AL+Qetl7HzF9sXhizEPenQoTRltdVrnk8E1pQp7D7N9DYp72eQ1ftFW1uG7qJirQqzQrgpGjk1b0JeDHaesj4ou+yvwIPqmbAseapj6y9A9Y7ApVHRES1Oa1tMdXzKbv6SOxI1fLiMz6vzCjvRkzA9qr8yKZCaN6ZQBgoAtOw7qScSWl4j5dpe+C1zjlOxJGJzpcYpoyGL2lioXzjGfBNpaHY+50jRx+jNwa46T84BI1ru4iP62xn5nyRT0J1WgnWAkPU2lcnKEW+aRZW5ePu8f2geAJUOZmPtB10PL9SYFqcKIi+6CPu8L2geFystk9o9zIG0uzvxRA1pjNkpuvd6HFhGNHaSHmjACW4DO7DlOHYqbaOPnVYq6nprz9xcYDAwshv2LXT+Rubqyn6Tv9R/zVf6zxPtfJE71dh/Z+bIfeuDAhRhAl2UMNuVFcXOdwnaLBXXTE9IVps+6+7OVj4eBXY+mirKMFx8RKVZFcebk1b1cvBjtPWR8UXhZX4EH1TNgWPNUx9ZegesdgUqjoiJanNa2kOr5lN39JHYkavlxGZ9X5hR3oyZge1V+ZFMhNG9MoAwUAT+yruWjEgQXw7TLIb4TS1gLxktIwbgNSXHPLgZXFYjAq+anVJvN55NanS+61p0P/ABZ1A014UTNQ11ciV+L9Bj7zs78mXxRWsKlBTNQU6E29TXV5bi3dMlkWbuVj7vH9oHgCVDmZj7QddDy/UmZallERTdFH3eF7SPC5WWye0e5kDaXZ34ohNmyTo8VkFud7qE8jc7j2Cq0V9yprdj5fvyKGil22KC5lqw4DWNaxoo1jQ0DmGZY6UnKTlLV8TWRiopRWiF9vWk2VgPjkVLcGN9OI7Bje/E8wKVVW7JqC5ibJqEXJ8iqKuNXPdlPe4ue70nuNXFa6utVwUFyMtbY7Zub5mpShBo5N29XLwY9T1kfFF4WV+BB9UzYFjzUsfWXoHrHYFKo6IiWpy2tpjq+ZTd/SR2JG748RmfV+YUd6Mm4HtVfmRTITRvDKAMFAF3XZ4nK+zs2J2OiMFju02eZjCJov6jvCUoinz9L6LeqNiZerPQ6erj4Is7cq4vH9oHgCVDmZn7QddDy/UmqWURFN0ji0L2lvhcrLZPaPcyBtLs78UeVwLKyYbplw4UXgs5oYzntPwCe2viN6aqWi4vx/wNbLo3YO16vTw/ySktVQWhV99LW+kTGQw1gypLG0zOi5oj+zRHar/ZeG3Y+llq9Ck2niM36Je8QFWxVmpXDpq5NW9CXgx2nrI+KLwsr8CD6pmwLIGpY+svQPWOwKVR0REtTktfTb1fMpu/pI7Ejd8eIzPq/MKO9GTMD2qvzIpoJo3plAGCgC7rs8TlfZ2bE7HRGCx3abPMxhE0X9R3hKURT5+l9FvVGxMvVnodPVx8EWduVcXj+0DwBKhzMz9oOuh5fqTVLKIQXws50wyXgNrw5oZR9FgY4ud3eSmYK5U2Ox8k/jyI2Kq9LXud7Q8hwmta1jRRrGhrRyAYBRZScm5PVkhJRWS0I/fe2TKy9GH7eYJhwv44cOJ/VvxIUjCYd3WqPLmM4i5U1uRVbGgANGYCi1iSSyRl23J5sCVwDUrgo1Kbt6EvBjtPWR8UXjZX4EH1TNgWQNQx9ZegesdgUqjoiJanHbOm3q+ZSL+kjsSNXwP3KZ9X5hRnoyZge1V+ZFOBNG9ZlAGCgC7rs8TlfZ2bE7HRGCx3abPMxhE0X9R3hKURT5+l9FvVGxMvVnodPVx8EWduVcXj+0DwBKhzMz9oOuh5fqTVLKIEACAIHunWeawJoVIDTAdyNqS5pHJXEHoCuNkWpTlB8+KKvalblBSXIgpKvikNSuHTUrgowU3b0JeDHKesj4ovGyvwIPqmbAsgahj6y9A9Y7ApVHRES1OK2tNvV8ykX9JHYkavfxKY9X5hR3oyXgnlia/MinQmTe5gg6BQBd12eJyvs7NidjojBY7tNnmYwiaL+o7wlKIp8/QNFvVGxMvVnoNL/tR8EWduVcXj+0DwBKhzM1t/roeX6k1SyjBAAgDktez2zEGLAd/wA1hAPI7Ox3Y4BOV2OuamuQmcFOLi+ZScRjmktcKOa4tcORzTQjvC18ZqcVJaMys4OEnF8jQldOGFw6BSLehLwY7T1kfFF42V+BB9UzYFkDTsfWXoHrHYFKo6IiWpxW4OE0/wAfNIv1R2JHLyw8qUmG/wDSPwxTA/RLdthLua/cpppTBv2+JlAZmCgMy77s8TlfZ2bE7HRGExvabPMxhE0X9R3hKURj59gaLeqNiZlqzfUv+3HwRZ+5TxeY9oHgCVDmZzbvXQ8v1JqllIJ72W0ZSWdFYKxXOEOEDmER1aOdzNAJ56AJ/D0u6xQQ1daqoObEu5rahfCfLPcXPguLwXGpc15q4nocT7ymbSwyqlGUdHw96/ki4DEu2LUtVx9xMlWE8rHdIszepgR2jgTQqeQRWgB3eKHvV9sq/eg63y08Cm2lTlJWLnwZElalYCDpkCtBylM4h5VSf6Mewyzuiv1L1k2ZMOG3khtHwCyZpR1Zo4HaVLo6IiWpy283BjuQkd//AMSb1wTCIljw8tj2ekwjvCjCmUdEZkuc052uI7jRMvgb6qzfhGa5pM1QOZgUBmXhdnicr7OzYnI6Iw+N7TZ5mMImi/qO8JSiMfPkDRb1RsTUtWbyp/24+CLP3KOLzHtA8ASoczO7c66Hh9SbJRSkR3T+KwvaW+Fysdl9o9zIW0OofuINdy1Po0zCjflByX88N2Dvn2K7xdPpqnDny8SnwtvorVLlz8C5+g1BxB5QcxWTNKJ72WV9JlYkMD7Ro3yH12YgdoqO1SMNd6G1T+PgNX1elrcSm2muK1ZmWsuDMoA7LHl98jwYfpRW91anYoW0J7tD/XgTMBHevT7s2XesyX45kW0Y3v71OqWUENvU8rWh1hO/jj3Z/hVFqziC1I60qEOFSXxkt6m4opg85Y6HZ/ikTXE1eybt/DKPs8PqhKkFnmBQGZeF2OJyvs7NicjoYrGdos8WMYmi/qO8JSiMfPcDRb1RsTb1Zuan/bj4ItDco4vMe0DwBdjzM/tvrYeH1JslFMRDdQ4rC9qb4XKw2Z2j3MhbQ6h+4rNaMoC17g2pv8qGOP2kud7PKW52Huw7Fm9o0ejubWkuP8mgwVvpKknquH8EkBUAmFRX2sv6PNvDRSHG+1ZyDKPDaOh1e8LSbOu9JTk9Vw/gosfTuWby0f7iFTyCSjc6k8uayyMILC7tOAVNtazow95bbMr4Sn7i0s+HKqYtR+xtAByCisEslkNGXtqCDmIouviBEorC1xafymigNZPIcIXuk2flQ2TDRjDOS7qnMe9Iks0WuyL/AEd249JfvyK9qmzT5ggMyWyG6DMQYUOC2BLFsJgYC4xKkDWaGlUpPJFPdsiNlkp7+rz0PZ26VNEEfR5XEEZ4usU5V3eQ16kj7fyIUxtAByCiSy7it2Kj3Egu5e2LJMfDhQoLxEflkxC+oNKUGSRgup5EDG4BYmSk5ZZLIdM3SJoiv0eVz8sX/crLBYNYiLk3lk8jKbXf3CyMF+LNZ93PIXXgvXGnIbYUSFBa1sQPqzLrUAinCNKYqzw2z1RPfUsyjvx3pYbm7kIVYEEY2JbUaUc58Asq9uSQ9uU0itRhUYjzUfE4aF8VGXIfw+IlTJtcxv8AX+e/7b/RP+5QvVNXtMl+s5+yhZbl4Y82GCPvP2biWlkMtdiKEVqcM3cpGGwUaJb0WxnEYx3R3XEVKaQy0Nz6zt6lt8cOFHOV/UYNWVxVvpbXI0tFXoq1AmFnMynjkbj8k3THOQ69B2po2CAEVvS9HCIMzsD0jN8NijXR45i4sSzcu2Kx8J4q17SD2pgUm080U1aUk6BFfBfnY6nSNRTbWTNjhcQr6lNe/wATmXCRmCAzJNcaUlHx4X0hznxHxsiHADatOFd8iuzZAxFNZC6kVm0b7oR3a1wyzcu79DjhSMOJaJl3kMhOnXsNOCA3LNGt5MwHahriLhfOOC9JrLdzJpK2VBjTcxZ77KZCgQgQyO0PDxgMlxecDWuHRiutLQqfvF8alf6XN56f4EdxbIhujTQmGw3tlQ9tIhDWueHFoJqcBRpNdVVNqulVQ1B5Ny5d2RE2qo4i+uyS4bnzzM3nlXiWbEbJSDIbntrGlYpigEZ2Eka81VY4O1ytydjb7msihxdajW2q14o6ZhsGQlZJ5lYMaLNnKiOjAuyWUDiGDUaOAHaUnftxN84Rm4qOmR1QqoojOUc2xbfmy4ctNZMEUhxYTYrW+jUkEDmwr2qRs/ETure/qiPj6I1TTjoyPqwIIIAYWDZhmY7IQzE1ceRgz/JQNoX+jr3Vq/2J2Ao37N96L9y4WNDQGtFA0AAcwWcL0eWTBozKOd2zUpdMco5iJM7k8JBAHjNwBEYWHWO46ikyjvLI6mRN7S0lpzg0KhNZPIcIrfqwt+h7/DH2sIYgfmZ8wuNZk7AYv7vZx6L1/n/eRWlU0ajMKoDMZ3atBkvNQJiJlZEKJlOyRV1KEYDXnXVqR8XCVlMoR1aPCamob5mJGLHOhPmHRC0nIc5jnk0qNF1O5deomiE44dQ0ll8yXwL2ykB2/wAGJacZzGEQpeM471DcQASXlxqO/OaJWf6lPLBXy/C4JPvRH7CmJUiL9Pgvib65zt8h6UN7qlxDKgOFT8FZYKN0q3Kprg9Hz4FbttU1W112exr7xjP2xLsk3WfKNjObFih8SLFaIdACDksYDnOSMelTIYe6y9W2JLLuKWV9VdLrg88zobbcpHl5aDONmA6TPBdBaHh7c2S4E1GAHcieHvqulZTk97v5BC+myqNdvDIWXntozkwY+QWMawQ4bSQXBramrqYVJJw1YJ/A4Z0QalqxjG4hXSW7ohUppDABInOMIuUtEKrhKclGOrLRudYv0aFlPH2sWhd/EamrL4i53TcmaSmpVQUESaTgGI8N1Zz0JuEN55DjeRIwKYcinDZlAAgAQAnt2RqN9aMQOFzjl7ExbDPihUWIg5RhZX19bslhdMwG8A4vaPyn0gORcaz4lvs/HbmVVj4cn3fp4dxDapBe5gg5mCAzBBzM6ZbR7Vf7I6uXj9DEfantFfl+p6K2MyCABAAuNpLNnUm3ktSbXKu5iJqM3nhtPjI2LPY3Fu6W7Hor/cy+wmFVMc30n/uROK16SoBMJFZ0pvbcdJ2J+SmVw3UNt5nWnDgIAEACABAEbtizcg5bBwDn/ifkotleXFC0xXzHEFMiiBXqugWl0aWFW53QxnHO3m5kNZlpg9oej/Bbpyfd/ghZSC8Uk1mtDCABAHVLaPar7ZHVy8foYr7Udor8v1PVWxmQQBkDUM5zAZz0JE7I1x3pPJCq65WS3YrNk0uxdOlI0y3nbDO1/wAlQYvGyue7HhH/AHUvcLhI0rN8Zd/8E1qoBMHdjyFPtHjHUOTnPOpNVeXFiGxsnxIIAEACABAAgDDmgihFQUARu1bKLKvYCWaxrb8wotleXFC0xWCmjpH7fupBmKvb9nF5RmPWCHx1JOHxVlD/AAvh3PQgFrWHHlz9ow5Opwxae3UkuLLujH1W8NH3P6MWpJNOqW0e1X2yOrl4/QxP2o7RX5fqeqtv1M0uPBDGy7FjzB+zYcnW92DR81X37Rrr4Q4v5E+nZ858Z8F8yd2FdyFLcI8OL6R1dUalSXXztecmW9VMKllBDuqZHR5ZdlUo+IMdTeTnPPzKTXVzYhscJ8SCABAAgAQAIAEACABACa0rEDquh0DuTUejkTM6s+KFJkfiw3MOS4EEaio7TWoo0cARQgEHUcQuAILSufLRaloMNx1tzdyOD1JFWLuq6MuHc+KFEK4rwab+zIrnocruUvD4uVEHGC148SNj0sbZGdnDJZcOY9s66svCxLTEcNb83Y3MmrcRZb0mIrprr6CyHjaAUAAA1DMmRw95WWfENGCvPqHSV2MXLQMyRWdZbYeJ4T+XUOj5qVCtREN5jBOHAQAIAEACABAAgAQAIAEACAPGZlmRBR7QR8R0HUuOKeoCScu+RjCdXmdgewpiVPcK3hPHl3sNHtI6RsOtMuLWoo86rgHRLScSJoMJHLmHeUpQb0OZjqTsADGK6vMM3aU9GnvObw4hQw0UaAANQTySWgk3XQBAAgAQAIAEACABAAgAQAIAEACABAGHNBwIBHOgBTLSzN+cMhlBm4IwTSit46N06cBAAgAQAIAEACABAAgD/9k=" alt="İTK Logo">
+        <img src="https://upload.wikimedia.org/wikipedia/tr/4/4e/Gazi_%C3%9Cniversitesi_logo.png" alt="Gazi Üniversitesi Logo">
+    </div>
+    <div id="Ana-Sayfaya-Dön">
+        <a href="/Web_Sayfam/index1.html">Ana Sayfaya Dön</a>
+    </div>
+</body>
+</html>
