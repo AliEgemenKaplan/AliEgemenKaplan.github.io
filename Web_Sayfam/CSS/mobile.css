@@ -126,12 +126,20 @@
     padding: 1px;
 
 }
-
-#home img{
-    max-width: 40%;
-    height: 40%;
-    border-radius: 100%;
+#home img {
+    max-width: 100%; /* Fotoğrafın genişliği kapsayıcıya göre otomatik ayarlanır */
+    height: auto;    /* Oranları korur */
+    border-radius: 50%; /* Yuvarlak fotoğraf */
 }
+
+/* iPhone ve benzeri dar ekranlı cihazlar için */
+@media only screen and (max-width: 500px) {
+    #home img {
+        max-width: 90%; /* Fotoğrafın genişliği kapsayıcıya göre ayarlanır */
+        height: auto;   /* Oranları korur */
+    }
+}
+
 .head-kurs{
     background: rgba(0, 0, 0, 0.5);
     justify-content: center;
@@ -185,6 +193,10 @@
         background: white;
        
     }
+
+
+
+
 
 
 
