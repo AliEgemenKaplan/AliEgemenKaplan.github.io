@@ -81,3 +81,18 @@ app.delete('/api/messages/:id', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Sunucu çalışıyor: http://localhost:${PORT}`);
 });
+app.post('/api/messages', async (req, res) => {
+  console.log("İSTEK GELDİ ✅", req.body); // 🔍 Bu satırı kontrol için ekle
+  try {
+    const newMessage = new Message(req.body);
+    await newMessage.save();
+    console.log("KAYIT BAŞARILI ✅");
+
+    // ... (mail kodları)
+    res.status(200).json({ message: 'Başarılı' });
+  } catch (err) {
+    console.log("HATA OLDU ❌", err);
+    res.status(500).json({ error: 'Kayıt hatası' });
+  }
+});
+
